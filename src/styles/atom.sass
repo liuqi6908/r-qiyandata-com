@@ -1,0 +1,192 @@
+// width、height、flex、gap、top、bottom、left、right、padding、margin、opacity、ellipsis
+@for $i from 0 through 100
+  .w-#{$i}
+    width: $i * 0.25rem
+  .h-#{$i}
+    height: $i * 0.25rem
+  .flex-#{$i}
+    flex: $i
+  .gap-#{$i}
+    gap: $i * 0.25rem
+  .gap-x-#{$i}
+    column-gap: $i * 0.25rem
+  .gap-y-#{$i}
+    row-gap: $i * 0.25rem
+  .t-#{$i}
+    top: $i * 0.25rem
+  .b-#{$i}
+    bottom: $i * 0.25rem
+  .l-#{$i}
+    left: $i * 0.25rem
+  .r-#{$i}
+    right: $i * 0.25rem
+  .p-#{$i}
+    padding: $i * 0.25rem
+  .px-#{$i}
+    padding-left: $i * 0.25rem
+    padding-right: $i * 0.25rem
+  .py-#{$i}
+    padding-top: $i * 0.25rem
+    padding-bottom: $i * 0.25rem
+  .pt-#{$i}
+    padding-top: $i * 0.25rem
+  .pb-#{$i}
+    padding-bottom: $i * 0.25rem
+  .pl-#{$i}
+    padding-left: $i * 0.25rem
+  .pr-#{$i}
+    padding-right: $i * 0.25rem
+  .m-#{$i}
+    margin: $i * 0.25rem
+  .mt-#{$i}
+    margin-top: $i * 0.25rem
+  .mb-#{$i}
+    margin-bottom: $i * 0.25rem
+  .ml-#{$i}
+    margin-left: $i * 0.25rem
+  .mr-#{$i}
+    margin-right: $i * 0.25rem
+  .opacity-#{$i}
+    opacity: $i / 100
+  .ellipsis-lines-#{$i}
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-box-orient: vertical
+    -webkit-line-clamp: $i
+
+// width and height
+.w-full
+  width: 100%
+.h-full
+  height: 100%
+.full
+  width: 100%
+  height: 100%
+
+// flex
+.row
+  display: flex
+  flex-direction: row
+.col
+  display: flex
+  flex-direction: column
+.row-reverse
+  display: flex
+  flex-direction: row-reverse
+.col-reverse
+  display: flex
+  flex-direction: column-reverse
+.flex-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.items-center
+  align-items: center
+.items-start
+  align-items: flex-start
+.items-end
+  align-items: flex-end
+.justify-center
+  justify-content: center
+.justify-between
+  justify-content: space-between
+.justify-around
+  justify-content: space-around
+.justify-end
+  justify-content: flex-end
+.justify-start
+  justify-content: flex-start
+
+// display
+.block
+  display: block
+.inline-block
+  display: inline-block
+
+// position
+.relative
+  position: relative
+.absolute
+  position: absolute
+.fixed
+  position: fixed
+.absolute-center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+.absolute-x-center
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+.absolute-y-center
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+
+// text
+.text-white
+  color: white
+.text-block
+  color: block
+.text-primary
+  color: var(--primary)
+.text-secondary
+  color: var(--secondary)
+.text-success
+  color: var(--success)
+.text-error
+  color: var(--error)
+.text-warning
+  color: var(--warning)
+.text-info
+  color: var(--info)
+
+.text-xs
+  font-size: 0.75rem
+  line-height: 1rem
+.text-sm
+  font-size: 0.875rem
+  line-height: 1.25rem
+.text-base
+  font-size: 1rem
+  line-height: 1.5rem
+.text-lg
+  font-size: 1.125rem
+  line-height: 1.75rem
+.text-xl
+  font-size: 1.25rem
+  line-height: 1.75rem
+.text-2xl
+  font-size: 1.5rem
+  line-height: 2rem
+.text-3xl
+  font-size: 1.875rem
+  line-height: 2.25rem
+
+.font-400
+  font-weight: 400
+.font-700
+  font-weight: 700
+
+.text-center
+  text-align: center
+.text-left
+  text-align: left
+.text-right
+  text-align: right
+
+.bg-white
+  background-color: white
+.bg-transparent
+  background-color: transparent
+
+.cursor-pointer
+  cursor: pointer
+.transition
+  transition: all 0.3s ease-in-out
+  
+.break-word
+  word-break: break-word

@@ -1,0 +1,19 @@
+@import './variables.css';
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  font-size: var(--font);
+  /*filter: grayscale(100%);*/
+}
+
+#app {
+  width: 120rem;
+  height: 100%;
+  margin: auto;
+  min-height: 44rem;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}

@@ -1,0 +1,26 @@
+/** 按钮 */
+.el-button {
+  font-family: inherit;
+}
+
+/** 输入框 */
+.el-input {
+  .el-input__inner {
+    background: #f0f0f0;
+    color: black;
+    border-radius: 20px;
+  }
+  .el-input__count-inner {
+    background-color: transparent !important;
+  }
+}
+
+/** 日期选择器 */
+.el-date-editor {
+  width: 100% !important;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  .el-range-input {
+    background-color: transparent !important;
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  --primary: #0e68b4;
+  --primary-0: rgba(14, 104, 180, 0);
+  --primary-10: rgba(14, 104, 180, 0.1);
+  --primary-30: rgba(14, 104, 180, 0.3);
+  --primary-50: rgba(14, 104, 180, 0.5);
+  --primary-70: rgba(14, 104, 180, 0.7);
+  --primary-90: rgba(14, 104, 180, 0.9);
+
+  --secondary: #5051f9;
+  --secondary-0: rgba(80, 81, 249, 0);
+  --secondary-10: rgba(80, 81, 249, 0.1);
+  --secondary-30: rgba(80, 81, 249, 0.3);
+  --secondary-50: rgba(80, 81, 249, 0.5);
+  --secondary-70: rgba(80, 81, 249, 0.7);
+  --secondary-90: rgba(80, 81, 249, 0.9);
+
+  --bg: #F5F5F5;
+  --font: 16px;
+
+
+  --success: #67C23A;
+  --error: #F56C6C;
+  --warning: #E6A23C;
+  --info: #909399;
+}

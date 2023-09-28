@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+
+  r_vue:
+    image: registry.cn-zhangjiakou.aliyuncs.com/qiyan_hz/qiyan_vue:1.1
+    environment:
+      TZ: Asia/Shanghai
+    container_name: r_vue
+    restart: always
+    volumes:
+      - "/data/app/r_qiyandata_com/r_qiyandata_com_vue:/tmp"
+      - "/usr/share/zoneinfo/Asia/Shanghai:/usr/share/zoneinfo/Asia/Shanghai:ro"
+    privileged: true
+    command: /bin/bash -c "cd /tmp && npm run dev"
+    networks:
+      qy_net:
+        ipv4_address: 10.6.6.31
+
+    mem_swappiness: 0
+    cpu_count: 2
+    cpu_percent: 80
+
+    deploy:
+      resources:
+        limits:
+          cpus: '1.00'
+          memory: 4096M
+        reservations:
+          cpus: '0.50'
+          memory: 512M
+
+networks:
+  qy_net:
+    external: true
